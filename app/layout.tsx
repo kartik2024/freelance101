@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import NavbarSec from "@/components/Navbarsecond";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`} //these are the fonts which are applied to all the text as it is defined in body tag.
+      // things which we add here like navbar are reamins fixed on all the pages. 
       >
         <Navbar />
+        <NavbarSec />
         {children}
       </body>
     </html>
