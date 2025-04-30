@@ -64,7 +64,7 @@ export default function PartyLedger(){
             </span>
             <div className="flex bg-white p-2">
                 <span className='bg-[#35d2ff] font-bold px-1'>Party : </span>
-                <input type='text' className='bg-white border ml-1' />
+                <input type='search' className='bg-white border ml-1' />
                 <input type='checkbox' name='transferEntries' value='transferEntries' className='ml-50' /> <b className='ml-1'>Show transfer entries</b>
                 <input type='checkbox' name='hideMatch' value='hideMatch' className='ml-50' /> <b className="ml-1">Hide match entries</b>
                 

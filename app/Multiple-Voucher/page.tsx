@@ -176,6 +176,7 @@ export default function MultipleVoucher() {
                   </button>
                 </td>
               </tr>
+              
               {rows.map((row) => (
                 <tr key={row.sno}>
                   <td className="border px-2 py-1">{row.sno}</td>

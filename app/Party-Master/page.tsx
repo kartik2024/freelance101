@@ -1,6 +1,18 @@
 export default function(){
+
+    const da_ta = [{'name':'John'},
+        {'name':'John'},
+        {'name':'John'},
+        {'name':'John'},
+        {'name':'John'},
+        {'name':'John'},
+        {'name':'John'},
+        {'name':'John'},
+
+   
+    ]
     return(
-        <div className="h-screen bg-blue-300"> 
+        <div className="h-full bg-blue-300"> 
         {/* parent div with bg-blue */}
 
         {/* component of third bar: */}
@@ -43,13 +55,32 @@ export default function(){
         </div>
 
 
-        <div className="flex h-120 ml-2">
+        <div className="flex ml-2 h-130 ">
     {/* first box */}
-        <div className="bg-[#8c96a0] w-76 mr-3"> 
-            <div className="h-10 px-1 m-1 w-73">
+        <div className="bg-[#8c96a0] w-10  mr-5 overflow-auto grow"> 
+            {/* <div className="h-10 px-1 m-1 w-73">
                     <div className="px-4 h-5 bg-blue-400"></div>
                     <div className="h-7 bg-white pl-1">DEFAULT</div>
-                </div>
+                </div> */}
+                 <table className='w-full table-fixed border-collapse mt-1'>
+                    <thead className='bg-[#35d2ff]'>
+                        <tr>
+                           
+                            <th className='border-2 border-black w-[10%] text-left'> <span className='ml-1'></span></th>
+
+                            </tr>
+                    </thead>
+                    <tbody>
+                        
+                    {da_ta.map((item, index) => (
+                                <tr key={index} className='bg-white'>
+                                <th className='border-1 border-black w-[10%] text-left'> <span className='ml-1'>{item.name}</span></th>
+                                </tr>
+                                
+                            ))}
+                    </tbody>
+                    </table>
+
         </div>
 
         {/* second-box */}
@@ -57,7 +88,7 @@ export default function(){
             <div className="">
             <span className="bg-white pl-2 pr-2 pb-1"><b>Group Master</b></span>
             </div>
-            <div className="w-335 h-114 bg-amber-50">
+            <div className="w-335 h-full bg-amber-50">
                 <p className="p-2 pl-3"><b>Group Name:</b></p>
                 <input type="text" name="" placeholder="DEFAULT" id="" className="w-80 border-1 ml-3 bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"  />
                 <p className="p-2 pl-3"><b>City:</b></p>
