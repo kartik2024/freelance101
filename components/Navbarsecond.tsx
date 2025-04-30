@@ -5,7 +5,7 @@
 export default function NavbarSec(){
     
     return(
-        <div className="bg-amber-50 pt-2 pb-2 ">
+        <div className="bg-amber-50 pt-2 pb-2">
         <div className="flex">
             <button className="flex flex-col items-center font-medium ml-3 rounded-lg cursor-pointer px-3 hover:bg-blue-300 transition ">
             
