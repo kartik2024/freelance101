@@ -10,7 +10,8 @@ export default function PartyLedger(){
         {'date': '2025-04-18', 'narration': 'John Doe to John Doe', 'debit': 16.04, 'credit': 652.66, 'balance': 2307.77, 'tally': false},
         {'date': '2025-04-15', 'narration': 'XYZ Ltd to John Doe', 'debit': 918.05, 'credit': 546.9, 'balance': -3098.66, 'tally': false},
         {'date': '2025-04-01', 'narration': 'Jane Smith to Jane Smith', 'debit': 809.6, 'credit': 468.41, 'balance': 3439.46, 'tally': true},
-        {'date': '2025-04-13', 'narration': 'XYZ Ltd to XYZ Ltd', 'debit': 864.64, 'credit': 550.55, 'balance': -4534.84, 'tally': false}
+        {'date': '2025-04-13', 'narration': 'XYZ Ltd to XYZ Ltd', 'debit': 864.64, 'credit': 550.55, 'balance': -4534.85, 'tally': false}
+        
       ]
       
     return(
@@ -20,7 +21,7 @@ export default function PartyLedger(){
         {/* component of third bar: */}
 
         <div className="pt-0.5 pb-0.5 bg-purple-950 items-center">
-            <div className="ml-1 bg-yellow-400 w-35 mt-1 pl-6">Party Ledger</div>
+            <div className="ml-1 bg-yellow-400 w-35 mt-1 pl-6"><b>Party Ledger</b></div>
         </div>
 
 
@@ -48,13 +49,15 @@ export default function PartyLedger(){
          <div className="flex">
 .
 
-            {/* stop/running */}
+            {/* Balance */}
                <div className="h-10 px-1 m-1">
                     <div className="px-9 h-1/2 bg-red-800 text-white">Balance</div>
                     <div className="h-1/2 bg-white "></div>
                 </div>
                 </div>
         </div>
+
+{/* table */}
         <div className='ml-1'>
             <span className='bg-white pb-1'>
                 Party Ledger
@@ -66,6 +69,9 @@ export default function PartyLedger(){
                 <input type='checkbox' name='hideMatch' value='hideMatch' className='ml-50' /> <b className="ml-1">Hide match entries</b>
                 
             </div>
+
+
+
             <div className='flex'>
                 <div className="w-4/5">
                 <div className='bg-[#35d2ff]'>
@@ -85,13 +91,14 @@ export default function PartyLedger(){
                             </tr>
                     </thead>
                     <tbody>
+
                     {data.map((item, index) => (
                                 <tr key={index} className='bg-white'>
                                 <th className='border-1 border-black w-[10%] text-left'> <span className='ml-1'>{item.date}</span></th>
                             <th className='border-1 border-black  text-left'><span className='ml-1'>{item.narration} </span></th>
-                            <th className='border-1 border-black w-[10%] text-left'><span className='ml-1'>{item.debit} </span></th>
+                            <th className='border-1 border-black w-[10%] text-left'><span className='ml-1'>{item.debit}</span></th>
                             <th className='border-1 border-black w-[10%] text-left'><span className='ml-1'>{item.credit}</span></th>
-                            <th className='border-1 border-black w-[10%] text-left'><span className='ml-1'>{item.balance}</span></th>
+                            <th className='border-1 border-black w-[10%] text-left'><span className='ml-1'>{item.balance} Cr.</span></th>
                             <th className='border-1 border-black w-[10%] text-left'><span className='ml-1'>{item.tally}</span></th>
                                 </tr>
                                 

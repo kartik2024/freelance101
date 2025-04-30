@@ -75,7 +75,7 @@ export default function Navbar() {
 
           {openDropdown==='first' && (
             <div className="absolute mt-1 w-48 bg-white border rounded shadow-lg text-sm z-50" ref={dropdownRef}>
-              <a href="http://localhost:3000/Party-Ledger" className="block px-4 py-1 hover:bg-gray-100">Party Master</a>
+              <a href="http://localhost:3000/Party-Master" className="block px-4 py-1 hover:bg-gray-100">Party Master</a>
               <a href="http://localhost:3000/Party-Ledger" className="block px-4 py-1 hover:bg-gray-100">Party Groups</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Expense Master</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Company Master</a>
@@ -92,11 +92,11 @@ export default function Navbar() {
             <div className="absolute mt-1 w-48 bg-white border rounded shadow-lg text-sm z-50" ref={dropdownRef}>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Single Voucher Entry</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Multi Voucher Entry</a>
-              <a href="#" className="block px-4 py-1 hover:bg-gray-100">Party Ledger</a>
+              <a href="http://localhost:3000/Party-Ledger" className="block px-4 py-1 hover:bg-gray-100">Party Ledger</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Party Balances</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Trial Balances</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Commited Amount</a>
-              <a href="#" className="block px-4 py-1 hover:bg-gray-100">Cash Book</a>
+              <a href="http://localhost:3000/Cash-Book" className="block px-4 py-1 hover:bg-gray-100">Cash Book</a>
               <a href="#" className="block px-4 py-1 hover:bg-gray-100">Day Book</a>
             </div>
           )}
