@@ -138,9 +138,9 @@ export default function PartywiseBalances(){
 
 
                     <div className="sticky bottom-0 bg-pink-300 flex font-bold border-1 border-black py-1">
-    <div className="w-98">Grand Total</div>
-    <div className="w-92">-2634267.00 Dr</div>
-    <div className="w-67">Grand Total</div>
+    <div className="w-104">Grand Total</div>
+    <div className="w-100">-2634267.00 Dr</div>
+    <div className="w-70">Grand Total</div>
     <div className="w-40">2634267.00 Cr</div>
   </div>
 </div>
